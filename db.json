@@ -1,0 +1,34 @@
+{
+  "user": {
+    "nama": "Julio Derill Juan Weol",
+    "umur": 21,
+    "tanggal_lahir": "3 Julio 2004",
+    "foto": "/fotoProfil.jpg",
+    "github": "https://github.com/djuliow",
+    "linkedin": "https://www.linkedin.com/in/julio-derill-juan-weol-4b358a387/",
+    "email": "weoljulioderill@gmail.com"
+  },
+  "certificates": [
+    { "id": 1, "title": "Introduction to Front End Development", "image": "/assets/sertif1.webp" },
+    { "id": 2, "title": "Python for Beginners", "image": "/assets/sertif2.webp" },
+    { "id": 3, "title": "Machine Learning Using Python", "image": "/assets/sertif3.webp" },
+    { "id": 4, "title": "Fundamentals of Machine Learning and Artificial Intelligence", "image": "/assets/sertif4.webp" },
+    { "id": 5, "title": "AWS Foundations: Machine Learning Basics", "image": "/assets/sertif5.webp" },
+    { "id": 6, "title": "Intro to Data Analytics", "image": "/assets/sertif6.webp" },
+    { "id": 7, "title": "LLM-Based Tools and Gemini API Integration for Data Scientists", "image": "/assets/sertif7.webp" },
+    { "id": 8, "title": "Transformer Models and BERT Model", "image": "/assets/sertif8.webp" }
+  ],
+  "tools": [
+    { "id": 1, "name": "Colab", "image": "/tools/colab.png" },
+    { "id": 2, "name": "Git", "image": "/tools/git.png" },
+    { "id": 3, "name": "GitHub", "image": "/tools/github.png" },
+    { "id": 4, "name": "JavaScript", "image": "/tools/js.png" },
+    { "id": 5, "name": "Node.js", "image": "/tools/nodejs.png" },
+    { "id": 6, "name": "Pandas", "image": "/tools/pandas.png" },
+    { "id": 7, "name": "Python", "image": "/tools/python.png" },
+    { "id": 8, "name": "React", "image": "/tools/reactjs.png" },
+    { "id": 9, "name": "Tailwind CSS", "image": "/tools/tailwindcss.png" },
+    { "id": 10, "name": "TensorFlow", "image": "/tools/tensorflow.png" },
+    { "id": 11, "name": "Vite", "image": "/tools/vite.png" }
+  ]
+}
