@@ -1,1 +1,7 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+.active {
+  text-decoration: underline;
+  color: #6ee7b7; /* A light green color */
+  text-underline-offset: 4px;
+}

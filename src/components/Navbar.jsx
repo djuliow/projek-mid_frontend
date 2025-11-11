@@ -1,24 +1,20 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll'; // Import from react-scroll
 
 const Navbar = () => {
-  // Using NavLink to apply active styles
-  const activeLinkStyle = {
-    textDecoration: 'underline',
-    color: '#6ee7b7', // A light green color for active link
-  };
-
   return (
-    <nav className="bg-gray-800 text-white p-4 sticky top-0 z-10">
+    <nav className="bg-gray-800 text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">
-          MyPortfolio
-        </Link>
+        <div className="text-xl font-bold cursor-pointer">
+          <Link to="home" smooth={true} duration={500}>
+            MyPortfolio
+          </Link>
+        </div>
         <div className="hidden md:flex space-x-6">
-          <NavLink to="/" style={({ isActive }) => isActive ? activeLinkStyle : undefined} className="hover:text-gray-300 transition duration-300">Home</NavLink>
-          <NavLink to="/about" style={({ isActive }) => isActive ? activeLinkStyle : undefined} className="hover:text-gray-300 transition duration-300">About</NavLink>
-          <NavLink to="/certificates" style={({ isActive }) => isActive ? activeLinkStyle : undefined} className="hover:text-gray-300 transition duration-300">Certificates</NavLink>
-          <NavLink to="/contact" style={({ isActive }) => isActive ? activeLinkStyle : undefined} className="hover:text-gray-300 transition duration-300">Contact</NavLink>
+          <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} className="hover:text-gray-300 transition duration-300 cursor-pointer">Home</Link>
+          <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} className="hover:text-gray-300 transition duration-300 cursor-pointer">About</Link>
+          <Link activeClass="active" to="certificates" spy={true} smooth={true} duration={500} className="hover:text-gray-300 transition duration-300 cursor-pointer">Certificates</Link>
+          <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} className="hover:text-gray-300 transition duration-300 cursor-pointer">Contact</Link>
         </div>
         {/* Mobile Menu Button */}
         <div className="md:hidden">
