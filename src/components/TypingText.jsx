@@ -40,7 +40,7 @@ const TypingText = ({ texts, typingSpeed = 100, deletingSpeed = 50, pauseDuratio
   return (
     <span className="font-semibold text-gray-800">
       {currentText}
-      <span className="inline-block w-0.5 h-5 bg-gray-800 align-middle animate-blink ml-1 relative top-0.5"></span>
+      <span className="inline-block w-0.5 h-7 bg-gray-800 align-middle animate-blink ml-1"></span>
     </span>
   );
 };
