@@ -12,7 +12,8 @@
     "description": "Building modern web interfaces with React and TailwindCSS. Exploring Machine Learning, AI, and Data Analytics to design smarter digital experiences.",
     "cta_projects_text": "View My Certificates",
     "cta_cv_text": "Download CV",
-    "profile_image_hero": "/fotoProfil.jpg"
+    "profile_image_hero": "/fotoProfil.jpg",
+    "about_description_full": "Hi! I’m Julio, a Front-End Developer who enjoys combining creativity with technology to build meaningful digital experiences. I specialize in creating clean, modern, and responsive web applications using React and TailwindCSS. My approach focuses on crafting visually appealing interfaces that not only look great but also provide seamless and engaging user interactions.\n\nBeyond front-end development, I’m deeply passionate about Machine Learning, Artificial Intelligence, and Data Analytics — exploring how intelligent systems and data-driven insights can transform the way users interact with digital products. I love discovering ways to merge AI capabilities into web experiences, bringing smarter and more personalized interactions to life.\n\nFor me, technology is more than just code — it’s a medium to solve real-world problems, automate ideas, and inspire people through design and innovation. I strive to build solutions that are both functional and beautiful, blending analytical thinking with creative storytelling in every project I work on."
   },
   "icons": {
     "gmail": "/icons/Gmail.svg",
@@ -22,14 +23,46 @@
     "github": "/icons/GitHub.svg"
   },
   "certificates": [
-    { "id": 1, "title": "Introduction to Front End Development", "image": "/assets/sertif1.webp" },
-    { "id": 2, "title": "Python for Beginners", "image": "/assets/sertif2.webp" },
-    { "id": 3, "title": "Machine Learning Using Python", "image": "/assets/sertif3.webp" },
-    { "id": 4, "title": "Fundamentals of Machine Learning and Artificial Intelligence", "image": "/assets/sertif4.webp" },
-    { "id": 5, "title": "AWS Foundations: Machine Learning Basics", "image": "/assets/sertif5.webp" },
-    { "id": 6, "title": "Intro to Data Analytics", "image": "/assets/sertif6.webp" },
-    { "id": 7, "title": "LLM-Based Tools and Gemini API Integration for Data Scientists", "image": "/assets/sertif7.webp" },
-    { "id": 8, "title": "Transformer Models and BERT Model", "image": "/assets/sertif8.webp" }
+    {
+      "id": 1,
+      "title": "Introduction to Front End Development (Simplilearn)",
+      "image": "/assets/sertif1.webp"
+    },
+    {
+      "id": 2,
+      "title": "Python for Beginners (Simplilearn)",
+      "image": "/assets/sertif2.webp"
+    },
+    {
+      "id": 3,
+      "title": "Machine Learning Using Python (Simplilearn)",
+      "image": "/assets/sertif3.webp"
+    },
+    {
+      "id": 4,
+      "title": "Fundamentals of Machine Learning and Artificial Intelligence (AWS)",
+      "image": "/assets/sertif4.webp"
+    },
+    {
+      "id": 5,
+      "title": "AWS Foundations: Machine Learning Basics (AWS)",
+      "image": "/assets/sertif5.webp"
+    },
+    {
+      "id": 6,
+      "title": "Intro to Data Analytics (RevoU)",
+      "image": "/assets/sertif6.webp"
+    },
+    {
+      "id": 7,
+      "title": "LLM-Based Tools and Gemini API Integration for Data Scientists (Maju Bareng)",
+      "image": "/assets/sertif7.webp"
+    },
+    {
+      "id": 8,
+      "title": "Transformer Models and BERT Model (Google Cloud & Simplilearn)",
+      "image": "/assets/sertif8.webp"
+    }
   ],
   "tools": [
     { "id": 1, "name": "Colab", "image": "/tools/colab.png" },
