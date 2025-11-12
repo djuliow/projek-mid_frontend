@@ -16,6 +16,7 @@ const HomePage = () => {
   const [user, setUser] = useState(null);
   const [certificates, setCertificates] = useState([]);
   const [tools, setTools] = useState([]);
+  const [icons, setIcons] = useState(null); // New state for icons
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   // Fetch all data at once
@@ -23,12 +24,14 @@ const HomePage = () => {
     const userRequest = axios.get('http://localhost:3000/user');
     const certificatesRequest = axios.get('http://localhost:3000/certificates');
     const toolsRequest = axios.get('http://localhost:3000/tools');
+    const iconsRequest = axios.get('http://localhost:3000/icons'); // New request for icons
 
-    Promise.all([userRequest, certificatesRequest, toolsRequest])
-      .then(([userResponse, certificatesResponse, toolsResponse]) => {
+    Promise.all([userRequest, certificatesRequest, toolsRequest, iconsRequest])
+      .then(([userResponse, certificatesResponse, toolsResponse, iconsResponse]) => {
         setUser(userResponse.data);
         setCertificates(certificatesResponse.data);
         setTools(toolsResponse.data);
+        setIcons(iconsResponse.data); // Set icons state
       })
       .catch(err => console.error("Error fetching data:", err));
   }, []);
@@ -48,7 +51,7 @@ const HomePage = () => {
       <AboutSection user={user} />
       <Skills skills={tools} />
       <CertificateList certificates={certificates} onCardClick={handleCardClick} />
-      <ContactSection user={user} />
+      <ContactSection user={user} icons={icons} /> {/* Pass icons as prop */}
       
       {/* Modal for enlarged image */}
       <Modal certificate={selectedCertificate} onClose={handleCloseModal} />

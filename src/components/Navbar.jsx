@@ -11,10 +11,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden md:flex space-x-6">
-          <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} className="hover:text-gray-300 transition duration-300 cursor-pointer">Home</Link>
-          <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} className="hover:text-gray-300 transition duration-300 cursor-pointer">About</Link>
-          <Link activeClass="active" to="certificates" spy={true} smooth={true} duration={500} className="hover:text-gray-300 transition duration-300 cursor-pointer">Certificates</Link>
-          <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} className="hover:text-gray-300 transition duration-300 cursor-pointer">Contact</Link>
+          <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} offset={-100} onSetActive={(to) => console.log('Active link:', to)} className="hover:text-gray-300 transition duration-300 cursor-pointer">Home</Link>
+          <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} offset={-100} onSetActive={(to) => console.log('Active link:', to)} className="hover:text-gray-300 transition duration-300 cursor-pointer">About</Link>
+          <Link activeClass="active" to="certificates" spy={true} smooth={true} duration={500} offset={-100} onSetActive={(to) => console.log('Active link:', to)} className="hover:text-gray-300 transition duration-300 cursor-pointer">Certificates</Link>
+          <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} offset={-100} onSetActive={(to) => console.log('Active link:', to)} className="hover:text-gray-300 transition duration-300 cursor-pointer">Contact</Link>
         </div>
         {/* Mobile Menu Button */}
         <div className="md:hidden">

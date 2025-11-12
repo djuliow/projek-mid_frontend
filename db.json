@@ -6,7 +6,15 @@
     "foto": "/fotoProfil.jpg",
     "github": "https://github.com/djuliow",
     "linkedin": "https://www.linkedin.com/in/julio-derill-juan-weol-4b358a387/",
-    "email": "weoljulioderill@gmail.com"
+    "email": "weoljulioderill@gmail.com",
+    "phone": "+6285823905410"
+  },
+  "icons": {
+    "gmail": "/icons/Gmail.svg",
+    "whatsapp": "/icons/WhatsApp.svg",
+    "phone": "/icons/Phone.svg",
+    "linkedin": "/icons/LinkedIn.svg",
+    "github": "/icons/GitHub.svg"
   },
   "certificates": [
     { "id": 1, "title": "Introduction to Front End Development", "image": "/assets/sertif1.webp" },
