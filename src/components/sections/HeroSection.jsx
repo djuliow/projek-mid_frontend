@@ -2,6 +2,7 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Fade } from "react-awesome-reveal";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import TypingText from "../../components/TypingText";
 
 const HeroSection = ({ user }) => {
   if (!user) {
@@ -39,7 +40,12 @@ const HeroSection = ({ user }) => {
               Hi, I’m <span className="text-blue-700">{user.nama}</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-4">
-              {user.subheading}
+              <TypingText 
+                texts={["Front-End Developer", "Machine Learning & AI Enthusiast", "Data Analytics"]} 
+                typingSpeed={100} 
+                deletingSpeed={50} 
+                pauseDuration={1500} 
+              />
             </p>
             <p className="text-md md:text-lg text-gray-600 mb-8">
               {user.description}
