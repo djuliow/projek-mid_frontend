@@ -75,6 +75,17 @@
     { "id": 8, "name": "React", "image": "/tools/reactjs.png" },
     { "id": 9, "name": "Tailwind CSS", "image": "/tools/tailwindcss.png" },
     { "id": 10, "name": "TensorFlow", "image": "/tools/tensorflow.png" },
-    { "id": 11, "name": "Vite", "image": "/tools/vite.png" }
+    { "id": 11, "name": "Vite", "image": "/tools/vite.png" },
+    { "id": 12, "name": "Html", "image": "/tools/html.png" },
+    { "id": 13, "name": "Pytorch", "image": "/tools/pytorch.png" },
+    { "id": 14, "name": "Scikit Learn", "image": "/tools/scikit_learn.png" },
+    { "id": 15, "name": "Jupyter", "image": "/tools/jupyter.png" },
+    { "id": 16, "name": "Numpy", "image": "/tools/numpy.png" },
+    { "id": 17, "name": "VS Code", "image": "/tools/vs_code.png" },
+    { "id": 18, "name": "Matplotlib", "image": "/tools/matplotlib.png" },
+    { "id": 19, "name": "Chat GPT", "image": "/tools/chat_gpt.png" },
+    { "id": 20, "name": "Deepseek", "image": "/tools/deepseek.png" },
+    { "id": 21, "name": "Gemini", "image": "/tools/gemini.png" },
+    { "id": 22, "name": "Grok", "image": "/tools/grok.png" }
   ]
 }
