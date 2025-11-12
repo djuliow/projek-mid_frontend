@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Fade } from "react-awesome-reveal"; // Import Fade
 
 // Import Section Components
 import HeroSection from '../components/sections/HeroSection';
@@ -48,8 +49,10 @@ const HomePage = () => {
   return (
     <main>
       <HeroSection user={user} />
-      <AboutSection user={user} />
-      <Skills skills={tools} />
+      <Fade direction="right" delay={200} duration={1000}>
+        <AboutSection user={user} />
+      </Fade>
+      <Skills skills={tools} /> {/* Skills already has Fade internally */}
       <CertificateList certificates={certificates} onCardClick={handleCardClick} />
       <ContactSection user={user} icons={icons} /> {/* Pass icons as prop */}
       

@@ -22,7 +22,7 @@ const HeroSection = ({ user }) => {
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
         {/* Profile Image - Left on Desktop, Top on Mobile */}
-        <Fade direction="left" triggerOnce className="shrink-0">
+        <Fade direction="left" delay={200} duration={1000} className="shrink-0">
           <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg border-4 border-white transform hover:scale-105 transition-transform duration-300">
             <img
               src={user.profile_image_hero || user.foto} // Use specific hero image or general foto
@@ -34,7 +34,7 @@ const HeroSection = ({ user }) => {
 
         {/* Intro Text & CTAs - Right on Desktop, Bottom on Mobile */}
         <div className="text-center md:text-left max-w-lg">
-          <Fade direction="right" triggerOnce>
+          <Fade direction="right" delay={200} duration={1000}>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-3">
               Hi, I’m <span className="text-blue-700">{user.nama}</span>
             </h1>

@@ -19,7 +19,7 @@ const AboutSection = ({ user }) => {
       className="py-20 bg-gray-50 min-h-screen flex items-center justify-center"
     >
       <div className="container mx-auto px-4">
-        <Fade triggerOnce>
+        <Fade>
           <div className="bg-white rounded-lg shadow-lg p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800 text-center">
               About Me

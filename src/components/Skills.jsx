@@ -9,7 +9,7 @@ const Skills = ({ skills }) => {
   return (
     <section id="skills" className="py-20 bg-gray-200">
       <div className="container mx-auto px-4">
-        <Fade direction="left" triggerOnce>
+        <Fade direction="left" delay={200} duration={1000}>
           <h2 className="text-4xl font-bold text-center mb-12">Tools & Skills</h2>
           <div className="flex flex-wrap justify-center items-center gap-10">
             {skills.map(skill => (
