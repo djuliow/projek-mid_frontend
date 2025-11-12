@@ -29,7 +29,7 @@ const ContactSection = ({ user, icons }) => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-100">
+    <section id="contact" className="py-20 bg-gray-100 min-h-[70vh]">
       <div className="container mx-auto px-4">
         <Fade direction="left" delay={200} duration={1000}>
           <h2 className="text-4xl font-bold mb-10 text-center">Contact Me</h2>

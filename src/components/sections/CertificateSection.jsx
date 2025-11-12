@@ -1,8 +1,8 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
-import CertificateCard from './CertificateCard';
+import CertificateCard from '../../components/CertificateCard';
 
-const CertificateList = ({ certificates, onCardClick }) => {
+const CertificateSection = ({ certificates, onCardClick }) => {
   if (!certificates || certificates.length === 0) {
     return null;
   }
@@ -16,9 +16,9 @@ const CertificateList = ({ certificates, onCardClick }) => {
         <Fade direction="right" delay={200} duration={1000}>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {certificates.map(cert => (
-              <CertificateCard 
-                key={cert.id} 
-                certificate={cert} 
+              <CertificateCard
+                key={cert.id}
+                certificate={cert}
                 onCardClick={onCardClick}
               />
             ))}
@@ -29,4 +29,4 @@ const CertificateList = ({ certificates, onCardClick }) => {
   );
 };
 
-export default CertificateList;
+export default CertificateSection;

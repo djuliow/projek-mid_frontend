@@ -7,8 +7,8 @@ import HeroSection from '../components/sections/HeroSection';
 import AboutSection from '../components/sections/AboutSection';
 import ContactSection from '../components/sections/ContactSection';
 
-// Import Presentational Components that are passed to sections
-import CertificateList from '../components/CertificateList';
+// Import Section Components
+import CertificateSection from '../components/sections/CertificateSection';
 import Skills from '../components/Skills';
 import Modal from '../components/Modal';
 
@@ -53,7 +53,7 @@ const HomePage = () => {
         <AboutSection user={user} />
       </Fade>
       <Skills skills={tools} /> {/* Skills already has Fade internally */}
-      <CertificateList certificates={certificates} onCardClick={handleCardClick} />
+      <CertificateSection certificates={certificates} onCardClick={handleCardClick} />
       <ContactSection user={user} icons={icons} /> {/* Pass icons as prop */}
       
       {/* Modal for enlarged image */}

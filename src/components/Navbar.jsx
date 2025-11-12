@@ -60,7 +60,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-30}
+            offset={-40}
             className="hover:text-gray-300 transition duration-300 cursor-pointer"
           >
             Contact
@@ -88,7 +88,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-gray-800 flex flex-col items-center py-2 space-y-2">
+        <div className="md:hidden absolute top-full left-0 w-full bg-gray-800 text-white flex flex-col items-center py-2 space-y-2">
           <Link
             activeClass="active"
             to="home"
@@ -134,7 +134,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={0}
+            offset={-40}
             onSetActive={(to) => console.log("Active link:", to)}
             onClick={closeMenu}
             className="block w-full text-center py-2 hover:bg-gray-700 transition duration-300 cursor-pointer"
