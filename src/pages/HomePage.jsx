@@ -47,7 +47,7 @@ const HomePage = () => {
 
   return (
     <main>
-      <HeroSection />
+      <HeroSection user={user} />
       <AboutSection user={user} />
       <Skills skills={tools} />
       <CertificateList certificates={certificates} onCardClick={handleCardClick} />

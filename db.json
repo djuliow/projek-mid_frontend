@@ -7,7 +7,12 @@
     "github": "https://github.com/djuliow",
     "linkedin": "https://www.linkedin.com/in/julio-derill-juan-weol-4b358a387/",
     "email": "weoljulioderill@gmail.com",
-    "phone": "+6285823905410"
+    "phone": "+6285823905410",
+    "subheading": "Front-End Developer | Machine Learning & AI Enthusiast | Data Analytics",
+    "description": "Building modern web interfaces with React and TailwindCSS. Exploring Machine Learning, AI, and Data Analytics to design smarter digital experiences.",
+    "cta_projects_text": "View My Certificates",
+    "cta_cv_text": "Download CV",
+    "profile_image_hero": "/fotoProfil.jpg"
   },
   "icons": {
     "gmail": "/icons/Gmail.svg",
