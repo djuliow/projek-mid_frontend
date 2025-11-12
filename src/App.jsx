@@ -6,8 +6,30 @@ import './App.css';
 
 function App() {
   useEffect(() => {
+    // Force scroll to top immediately
     window.scrollTo(0, 0);
-    window.location.hash = ''; // Clear the URL hash
+    
+    // Remove hash from URL if present
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname + window.location.search);
+    }
+    
+    // Additional forced scroll after a very short delay to override any other scrolling
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50);
+    
+    // Ensure scrolling to top on any kind of page load
+    const onBeforeUnload = () => {
+      window.scrollTo(0, 0);
+    };
+    
+    window.addEventListener('beforeunload', onBeforeUnload);
+    
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('beforeunload', onBeforeUnload);
+    };
   }, []);
 
   return (

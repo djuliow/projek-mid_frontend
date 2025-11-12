@@ -38,7 +38,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-50}
             className="hover:text-gray-300 transition duration-300 cursor-pointer"
           >
             About
@@ -49,7 +49,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-50}
             className="hover:text-gray-300 transition duration-300 cursor-pointer"
           >
             Certificates
@@ -60,7 +60,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-30}
             className="hover:text-gray-300 transition duration-300 cursor-pointer"
           >
             Contact
@@ -108,7 +108,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-50}
             onSetActive={(to) => console.log("Active link:", to)}
             onClick={closeMenu}
             className="block w-full text-center py-2 hover:bg-gray-700 transition duration-300 cursor-pointer"
@@ -121,7 +121,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-50}
             onSetActive={(to) => console.log("Active link:", to)}
             onClick={closeMenu}
             className="block w-full text-center py-2 hover:bg-gray-700 transition duration-300 cursor-pointer"
@@ -134,7 +134,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={0}
             onSetActive={(to) => console.log("Active link:", to)}
             onClick={closeMenu}
             className="block w-full text-center py-2 hover:bg-gray-700 transition duration-300 cursor-pointer"
